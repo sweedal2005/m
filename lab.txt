@@ -40,6 +40,20 @@ docker run myapp
 
 DevOps Lab Cheat Sheet
 
+
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Hello Jenkins'
+            }
+        }
+    }
+}
+
+
 Prof. Akshatha M, VVCE
 B2: Create and configure Jenkins files for workflow and build of an application
 and push the image on docker hub..
